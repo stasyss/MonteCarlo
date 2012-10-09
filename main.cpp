@@ -8,6 +8,6 @@ int main (int argc, char const *argv[])
 	//kintamųjų apsirašymas
 	double f, x; //funkcijos reikšmė ir argumentas x
 	int n; //uždavinio dimensija
-	double xfukcija; //lala
+	double xsprendinys; //lala
 	return 0;
 }
