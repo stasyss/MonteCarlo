@@ -27,6 +27,7 @@ int main (int argc, char const *argv[])
 	cout << random_integer << endl;
 	*/
 	
+	cout << "Įveskite intervalo [a,b] rėžių reikšmes" <<endl;
 	cout << "a = "; cin >>a;
 	cout <<endl<< "b = "; cin >>b;
 	cout << endl;
