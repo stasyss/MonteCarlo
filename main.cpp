@@ -55,8 +55,8 @@ int main (int argc, char const *argv[])
 	
 	cout << ")"<<endl;
 	
-	mas[0] = -0.089842;
-	mas[1] = 0.712656;
+	//mas[0] = -0.089842;
+	//mas[1] = 0.712656;
 	cout << "Six hump funkcijos reikšmė šiame taške: " << sixhump(&mas[0])<< endl;
 	
 	return 0;
