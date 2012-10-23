@@ -18,28 +18,29 @@ int main (int argc, char const *argv[])
 	int n; //uždavinio dimensija
 	double xsprendinys; //lala
 	int fsprendinys; //uždavinio sprendinys
-	double a, b, ilg, mas[100];
+	double a, b, mas[100];
 	
-	//random r1
-	/*srand((unsigned)time(0));
-	float random_integer; 
-	random_integer = (rand()%10)+1;
-	cout << random_integer << endl;
-	*/
+
 	
 	cout << "Įveskite intervalo [a,b] rėžių reikšmes" <<endl;
 	cout << "a = "; cin >>a;
 	cout <<endl<< "b = "; cin >>b;
-	cout <<endl<< "vektoriaus ilgis: "; cin >>ilg;
+	cout <<endl<< "vektoriaus dimensiją (n): "; cin >>n;
 	cout << endl;
 	
 	srand(time(0));
 	
-	
-	for(int i = 0; i<ilg; i++)
+	cout << "x = ( ";
+	for(int i = 0; i<n; i++)
 	{
 		mas[i] = closed_interval_rand(a, b);
-		cout << i<<": "<< mas[i] << endl;
 	}
+	
+	for(int i = 0; i<n; i++)
+	{
+		cout<< mas[i]<< " ";
+	}
+	
+	cout << ")"<<endl;
 	return 0;
 }
