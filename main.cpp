@@ -3,6 +3,7 @@
 #include <ctime> 
 #include <cmath>
 #include <vector>
+#include "sixhump/sixhump.h"
 
 #define N 2
 #define EPS 0.5
@@ -92,13 +93,13 @@ void heapsort(tsk *a,int n)
 		}
 	}
 }
-
+/*
 double sixhump(double * x)
 {
 	double f = (4-2.1*x[0]*x[0]+pow(x[0], 4.0)/3)*x[0]*x[0]+x[0]*x[1]+(-4+4*x[1]*x[1])*x[1]*x[1];
 	return f;
 }
-
+*/
 double closed_interval_rand(double x0, double x1)
 {
 	return x0 + (x1 - x0) * rand() / ((double) RAND_MAX);
